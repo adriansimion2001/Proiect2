@@ -1,0 +1,42 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer0                                                                        0x021F       8
+tx_buffer0                                                                        0x0227       8
+_seed (stdlib.lib)                                                                0x022F       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index0                                                                      R3           1
+rx_rd_index0                                                                      R2           1
+rx_counter0                                                                       R5           1
+rx_buffer_overflow0                                                               GPIOR0.0  1bit
+tx_wr_index0                                                                      R4           1
+tx_rd_index0                                                                      R7           1
+tx_counter0                                                                       R6           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+LCD_send_command                                                                  0x000AC      3
+LCD_send_data                                                                     0x000AF     13
+LCD_init                                                                          0x000BC     15
+LCD_print                                                                         0x000CB     17
+LCD_clear                                                                         0x000DC      6
+usart0_rx_isr                                                                     0x000E2     29
+usart0_tx_isr                                                                     0x000FF     21
+timer1_compa_isr                                                                  0x00114      6
+random_generator                                                                  0x0011A     55
+inttochar                                                                         0x00151      3
+main                                                                              0x00154     98
+Init_initController                                                               0x001B6    104
+srand                                                                             0x0021E      7
+rand                                                                              0x00225     21
+realloc                                                                           0x0023A      3
+malloc                                                                            0x0023D      2
+free                                                                              0x0023F      8

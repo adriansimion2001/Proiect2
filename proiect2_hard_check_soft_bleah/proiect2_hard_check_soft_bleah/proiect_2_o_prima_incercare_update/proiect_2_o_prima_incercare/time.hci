@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:56AA9C21
+NODE:M LEVEL:0 LINE:2 "_TIME_H"
+NODE:M LEVEL:0 LINE:4 "__need_size_t"
+NODE:M LEVEL:0 LINE:5 "__need_NULL"
+NODE:I LEVEL:0 LINE:6 "C:\cvavreval\inc\stddef.h"
+NODE:F LEVEL:0 LINE:37 "__BEGIN_DECLS(void)"
+NODE:F LEVEL:0 LINE:40 "clock(void)"
+NODE:F LEVEL:0 LINE:42 "time_t(void)"
+NODE:F LEVEL:0 LINE:42 "time_t(void)"

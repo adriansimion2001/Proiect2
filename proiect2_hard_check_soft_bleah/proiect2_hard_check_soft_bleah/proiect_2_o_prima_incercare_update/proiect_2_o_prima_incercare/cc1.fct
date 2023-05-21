@@ -1,0 +1,4 @@
+main DSTACK_USAGE:2 DSTACK_LEVEL:2 FILE:"main.c" LINE:238
+random_generator DSTACK_USAGE:12 DSTACK_LEVEL:14 FILE:"main.c" LINE:221
+malloc DSTACK_USAGE:2 DSTACK_LEVEL:16 FILE:"C:\cvavreval\lib\stdlib.lib" LINE:1246
+usart0_rx_isr DSTACK_USAGE:5 DSTACK_LEVEL:21 FILE:"main.c" LINE:69
