@@ -1,6 +1,0 @@
-main DSTACK_USAGE:2 DSTACK_LEVEL:2 FILE:"main.c" LINE:249
-random_generator DSTACK_USAGE:12 DSTACK_LEVEL:14 FILE:"main.c" LINE:229
-printf DSTACK_USAGE:10 DSTACK_LEVEL:24 FILE:"C:\cvavreval\lib\stdio.lib" LINE:1592
-_print DSTACK_USAGE:20 DSTACK_LEVEL:44 FILE:"C:\cvavreval\lib\stdio.lib" LINE:597
-strlen DSTACK_USAGE:2 DSTACK_LEVEL:46 FILE:"C:\cvavreval\lib\string.lib" LINE:1722
-usart0_rx_isr DSTACK_USAGE:5 DSTACK_LEVEL:51 FILE:"main.c" LINE:69

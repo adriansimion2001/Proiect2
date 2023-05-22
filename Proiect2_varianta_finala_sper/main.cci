@@ -1,0 +1,8 @@
+VERSION:3 SOURCE_TIMESTAMP:56B70EE7
+NODE:I LEVEL:0 LINE:9 "C:\cvavreval\inc\mega164a.h"
+NODE:I LEVEL:0 LINE:11 "C:\cvavreval\inc\delay.h"
+NODE:I LEVEL:0 LINE:12 "C:\cvavreval\inc\string.h"
+NODE:I LEVEL:0 LINE:13 "C:\cvavreval\inc\stdlib.h"
+NODE:I LEVEL:0 LINE:14 "lcd8bit.h"
+NODE:I LEVEL:0 LINE:15 "C:\Users\simio\Downloads\test_soft_M164_20MHz_v1.3 (1)\defs.h"
+NODE:F LEVEL:0 LINE:17 "main(void)"
