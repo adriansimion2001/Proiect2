@@ -11,38 +11,39 @@
 #define _delay_ms delay_ms
 #define _delay_us delay_us
 
-#define RS_PIN		4
-#define RW_PIN		2
-#define ENABLE_PIN	3
+#define RS_PIN		4   //Register select 0: commands/ 1: data 
+#define RW_PIN		2   //0: Read / 1: Write
+#define ENABLE_PIN	3   //0: Disable / 1: Enable
+						//PORTD (0:7) reserved for DATA
 
 
 
-void LCD_send_command(unsigned char cmnd)      //send comands to display
+void LCD_send_command(unsigned char cmnd)      //Send comands to display
 {
 	PORTB = cmnd;
-	PORTD &= ~(1<< RW_PIN);    //initializare write
-	PORTD &= ~(1<< RS_PIN);    //initializare Rs pentru comenzi
+	PORTD &= ~(1<< RW_PIN);    //LCD set for write
+	PORTD &= ~(1<< RS_PIN);    //LCD set for send commands
 
-	PORTD |= (1<< ENABLE_PIN);
+	PORTD |= (1<< ENABLE_PIN); //LCD ENABLE_PIN = 1;
 	_delay_us(2);
-	PORTD &= ~(1<< ENABLE_PIN);
+	PORTD &= ~(1<< ENABLE_PIN);//LCD ENABLE_PIN = 0;
 	_delay_us(100);
 }
 
 
-void LCD_send_data(unsigned char data)     //send ascii characters to display
+void LCD_send_data(unsigned char data)     //Send ascii characters to display
 {
 	PORTB = data;
-	PORTD &= ~(1<< RW_PIN);
-	PORTD |= (1<< RS_PIN);
+	PORTD &= ~(1<< RW_PIN);		//LCD set for writre 
+	PORTD |= (1<< RS_PIN);		//LCD set for send data
 
-	PORTD |= (1<< ENABLE_PIN);
+	PORTD |= (1<< ENABLE_PIN);	//LCD ENABLE_PIN = 1;
 	_delay_us(2);
-	PORTD &= ~(1<< ENABLE_PIN);
+	PORTD &= ~(1<< ENABLE_PIN); //LCD ENABLE_PIN = 0;
 	_delay_us(100);
 }
 
-void LCD_init()                 // initiate the screen
+void LCD_init()                 //Initiate the screen
 {
 	_delay_ms(10);
 	LCD_send_command(0x38);
@@ -72,7 +73,7 @@ void LCD_print(char *string) //Print string on screen
 }
 
 
-void LCD_clear(void)        //clear the screen
+void LCD_clear(void)        //Clear the LCD screen
 {
 LCD_send_command(0x01);
 _delay_ms(100);

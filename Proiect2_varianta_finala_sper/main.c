@@ -25,13 +25,12 @@ void main (void)
     int contor_v=0;
     int random[30];
     srand(3); 
-    Init_initController();  // this must be the first "init" action/call!
-    #asm("sei")             // enable interrupts
-    LED1 = 1;               // the high value of led indicate indicate if the game is powered on
+    Init_initController();  
+    LED1 = 1;               //The high value of led indicate indicate if the game is powered on
     LCD_init();
     LCD_clear();
  
-while(1){
+while(1){                          //Level select
 LCD_print("Apasa un Buton");     
       
             while(1){
@@ -59,7 +58,7 @@ LCD_print("Apasa un Buton");
              delay_ms(500);
              LCD_clear();  
              timp=800;
-             max=7;
+             max=9;
              cnt=5;
             break;
          }
@@ -68,13 +67,13 @@ LCD_print("Apasa un Buton");
              delay_ms(500);
              LCD_clear();  
              timp=800;
-             max=8;
+             max=10;
              cnt=6;
             break;  
         }
             
         }
-    while(1){
+    while(1){                   //Display the color sequence 
     if(cnt>max) break;
     for(i=0;i<cnt;i++){  
        random[i] = rand() % 3;
@@ -108,7 +107,7 @@ LCD_print("Apasa un Buton");
            LCD_clear();
     }   
         contor_v=0;
-        LCD_print("Introdu secventa:"); 
+        LCD_print("Introdu secventa:"); //Wait for user to introduce the sequence in order
         delay_ms(1000);
         LCD_clear();
         for(i=0; i<cnt*10;i++ ){
@@ -120,13 +119,13 @@ LCD_print("Apasa un Buton");
              }
         }
         LCD_clear();
-          if(!verif(random, v_inreg, cnt, contor_v)){
+          if(!verif(random, v_inreg, cnt, contor_v)){  //Verify if the user entered the sequence wrong
             LCD_print("Ai esuat!"); 
             delay_ms(1000);   
             LCD_clear();
-            break;     
+            break;     //If the sequence was wrong, the player jump to the select level menu
           }
-          else  {LCD_print("Felicitari!");  delay_ms(1000); LCD_clear();   
+          else  {LCD_print("Felicitari!");  delay_ms(1000); LCD_clear();   //If the sequence was right, the player pass to the next level
           }
         cnt++; 
         }      
