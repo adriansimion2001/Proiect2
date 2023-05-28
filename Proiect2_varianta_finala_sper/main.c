@@ -31,7 +31,37 @@ void main (void)
     LCD_clear();
  
 while(1){                          //Level select
-LCD_print("Apasa un Buton");     
+
+        LCD_print("Apasa orice buton");
+         while(1){
+            delay_ms(100);   
+            if(!BUTON_VERDE){      
+            LCD_clear();
+            break;}   
+            if(!BUTON_PORTOCALIU){      
+            LCD_clear();
+            break;}
+            if(!BUTON_ALBASTRU){      
+            LCD_clear();
+            break;}
+            if(!BUTON_ROSU){      
+            LCD_clear();
+            break;}
+            
+         }   
+        
+        LCD_print("Selecteaza"); 
+        LCD_goto(2,1);
+        LCD_print("dificultatea");
+        delay_ms(2000);
+        LCD_clear();
+        LCD_print("Verde -> Usor");  
+        LCD_goto(2,1);     
+        LCD_print("Portocaliu -> Mediu");  
+        LCD_goto(3,1);  
+        LCD_print("Albastru -> Greu");  
+        LCD_goto(4,1);  
+        LCD_print("Rosu -> Foarte Greu");  
       
             while(1){
             delay_ms(100);   
