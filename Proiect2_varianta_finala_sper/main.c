@@ -76,7 +76,7 @@ LCD_print("Apasa un Buton");
     while(1){                   //Display the color sequence 
     if(cnt>max) break;
     for(i=0;i<cnt;i++){  
-       random[i] = rand() % 3;
+       random[i] = rand() % 4;
     }        
         for(i=0; i<cnt; i++){
             switch (random[i])
