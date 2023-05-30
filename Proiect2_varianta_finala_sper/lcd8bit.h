@@ -54,7 +54,7 @@ void LCD_init()                 //Initiate the screen
 }
 
 
-void LCD_goto(unsigned char y, unsigned char x)     //LCD_goto(y,x) =>row x, column y
+void LCD_goto(unsigned char y, unsigned char x)     //LCD_goto(y,x) =>row y, column x
 {
 	unsigned char firstAddress[] = {0x80,0xC0,0x94,0xD4};
 
