@@ -11,7 +11,7 @@
 #define _delay_ms delay_ms
 #define _delay_us delay_us
 
-#define RS_PIN		4   //Register select 0: commands/ 1: data 
+#define RS_PIN		0   //Register select 0: commands/ 1: data 
 #define RW_PIN		2   //0: Read / 1: Write
 #define ENABLE_PIN	3   //0: Disable / 1: Enable
 						//PORTD (0:7) reserved for DATA
@@ -22,7 +22,7 @@ void LCD_send_command(unsigned char cmnd)      //Send comands to display
 {
 	PORTB = cmnd;
 	PORTD &= ~(1<< RW_PIN);    //LCD set for write
-	PORTD &= ~(1<< RS_PIN);    //LCD set for send commands
+	PORTC &= ~(1<< RS_PIN);    //LCD set for send commands
 
 	PORTD |= (1<< ENABLE_PIN); //LCD ENABLE_PIN = 1;
 	_delay_us(2);
@@ -35,7 +35,7 @@ void LCD_send_data(unsigned char data)     //Send ascii characters to display
 {
 	PORTB = data;
 	PORTD &= ~(1<< RW_PIN);		//LCD set for writre 
-	PORTD |= (1<< RS_PIN);		//LCD set for send data
+	PORTC |= (1<< RS_PIN);		//LCD set for send data
 
 	PORTD |= (1<< ENABLE_PIN);	//LCD ENABLE_PIN = 1;
 	_delay_us(2);

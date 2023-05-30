@@ -21,11 +21,11 @@ DDRB=0xFF; //set PORTB as output for DATA
 
 // Port C initialization
 PORTC=0x00;
-DDRC=0x00;
+DDRC=0x01;
 
 // Port D initialization
 PORTD=0b00100000; // D.5 needs pull-up resistor
-DDRD= 0b01011100; // D.2 RW, D.3 Enable Pin, D.4 RS Pin, D.6 is LED
+DDRD= 0b11011100; // D.2 RW, D.3 Enable Pin, D.4 RS Pin, D.6 is LED
 
 
 
