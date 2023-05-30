@@ -11,8 +11,8 @@ CLKPR=0x00;
 #pragma optsize+
 #endif
 
-// Port B initialization
-PORTA=0xFF; //initialize pull-up resistor
+// Port A initialization
+PORTA=0x00; 
 DDRA=0x00;  //set PORTA as input for colored buttons
 
 // Port B initialization
@@ -21,11 +21,11 @@ DDRB=0xFF; //set PORTB as output for DATA
 
 // Port C initialization
 PORTC=0x00;
-DDRC=0x01;
+DDRC=0x01; //C.0 RS Pin
 
 // Port D initialization
 PORTD=0b00100000; // D.5 needs pull-up resistor
-DDRD= 0b11011100; // D.2 RW, D.3 Enable Pin, D.4 RS Pin, D.6 is LED
+DDRD= 0b01001100; // D.2 RW, D.3 Enable Pin, D.6 is LED
 
 
 
