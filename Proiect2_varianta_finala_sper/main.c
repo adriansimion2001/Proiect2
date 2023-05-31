@@ -26,7 +26,7 @@ void main (void)
     int random[30];
     srand(3); 
     Init_initController();  
-    LED1 = 1;               //The high value of led indicate indicate if the game is powered on
+    LED1 = 1;               //The high value of led indicates if the game is powered on
     LCD_init();
     LCD_clear();
  
@@ -137,7 +137,7 @@ while(1){                          //Level select
            LCD_clear();
     }   
         contor_v=0;
-        LCD_print("Introdu secventa:"); //Wait for user to introduce the sequence in order
+        LCD_print("Introdu secventa:"); //Wait for the user to introduce the sequence in order
         delay_ms(1000);
         LCD_clear();
         for(i=0; i<cnt*10;i++ ){
@@ -153,9 +153,9 @@ while(1){                          //Level select
             LCD_print("Ai esuat!"); 
             delay_ms(1000);   
             LCD_clear();
-            break;     //If the sequence was wrong, the player jump to the select level menu
+            break;     //If the sequence was wrong, the player jumps to the select level menu
           }
-          else  {LCD_print("Felicitari!");  delay_ms(1000); LCD_clear();   //If the sequence was right, the player pass to the next level
+          else  {LCD_print("Felicitari!");  delay_ms(1000); LCD_clear();   //If the sequence was right, the player passes to the next level
           }
         cnt++; 
         }      

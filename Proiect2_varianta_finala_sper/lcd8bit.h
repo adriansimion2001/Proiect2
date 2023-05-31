@@ -34,7 +34,7 @@ void LCD_send_command(unsigned char cmnd)      //Send comands to display
 void LCD_send_data(unsigned char data)     //Send ascii characters to display
 {
 	PORTB = data;
-	PORTD &= ~(1<< RW_PIN);		//LCD set for writre 
+	PORTD &= ~(1<< RW_PIN);		//LCD set for write 
 	PORTC |= (1<< RS_PIN);		//LCD set for send data
 
 	PORTD |= (1<< ENABLE_PIN);	//LCD ENABLE_PIN = 1;
