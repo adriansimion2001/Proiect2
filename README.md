@@ -1,5 +1,5 @@
 # Proiect2 2022-2023
-Joc de memorie de tip “Simon Says”, cu afișaj şi tastatură utilizând procesorul AT Mega 164
+Joc de memorie de tip “Simon Says”, cu afișaj şi tastatură utilizând procesorul AT Mega 164 utilizand compilatorul CodeVisionAVR
 Coordonator științific: Prof. dr. ing. Mihai Stanciu 
 Membrii echipei: Filotti Teodora-Maria, Simion Adrian-Nicolae
 
