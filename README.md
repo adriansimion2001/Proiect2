@@ -51,6 +51,7 @@ corespunzători ai ecranului LCD, permițând astfel afișarea culorilor și a i
 |                |                         |          | USB la UART                    |                      |           |
 |                |                         |          | Tensiunea de intrare: 3.3V/5V, |                      |           |
 |                |                         |          | Chip CH340G                    |                      |           |
+|----------------|-------------------------|----------|--------------------------------|----------------------|-----------|
 | ECRAN LCD 1604 | LCD 1604                |          | 16x4                           | hobbymarket.ro       | 1         |
 
 
