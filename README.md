@@ -36,6 +36,7 @@ corespunzători ai ecranului LCD, permițând astfel afișarea culorilor și a i
 
 
 | Clasa          | Referinta               | Valoarea | Descriere                      | Furnizor, Cod produs | Cantitate |
+|----------------|-------------------------|----------|--------------------------------|----------------------|-----------|
 | Rezistor       | R2                      | 470 ohm  | SMD                            | UPD                  | 1         |
 | Rezistor       | R1,R3,R4,R5,R6          | 10 kohm  | SMD                            | UPB                  | 5         |
 | Rezistor       | R7                      | 1 kohm   | THD                            | UPB                  | 1         |
@@ -51,7 +52,6 @@ corespunzători ai ecranului LCD, permițând astfel afișarea culorilor și a i
 |                |                         |          | USB la UART                    |                      |           |
 |                |                         |          | Tensiunea de intrare: 3.3V/5V, |                      |           |
 |                |                         |          | Chip CH340G                    |                      |           |
-|----------------|-------------------------|----------|--------------------------------|----------------------|-----------|
 | ECRAN LCD 1604 | LCD 1604                |          | 16x4                           | hobbymarket.ro       | 1         |
 
 
