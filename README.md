@@ -35,9 +35,7 @@ controlat de microcontroller-ul ATMega164 prin intermediul liniilor de cod. Aces
 corespunzători ai ecranului LCD, permițând astfel afișarea culorilor și a informațiilor pe ecran.
 
 
-+----------------+-------------------------+----------+--------------------------------+----------------------+-----------+
 | Clasa          | Referinta               | Valoarea | Descriere                      | Furnizor, Cod produs | Cantitate |
-|----------------|-------------------------|----------|--------------------------------|----------------------|-----------|
 | Rezistor       | R2                      | 470 ohm  | SMD                            | UPD                  | 1         |
 |----------------|-------------------------|----------|--------------------------------|----------------------|-----------|
 | Rezistor       | R1,R3,R4,R5,R6          | 10 kohm  | SMD                            | UPB                  | 5         |
