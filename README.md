@@ -88,10 +88,10 @@ dar in conditia de verificare a secventei introduse, rezulta intotdeauna victori
 
 
   Pentru reglarea contrastului am folosit un potentiometru, am masurat valoarea tensiunii si l-am inlocuit cu un divizor de tensiune.
-  
-    Pentru implementarea randului de butoane am facut un debounce hardware, folosind condensatoare.
 
-Proiectul este portabil, poate functiona pe o baterie de 9V; am confectionat o carcasa dintr-un suport de bureti.
+  Pentru implementarea randului de butoane am facut un debounce hardware, folosind condensatoare.
+
+  Proiectul este portabil, poate functiona pe o baterie de 9V; am confectionat o carcasa dintr-un suport de bureti.
 
  
 Bibliografie
