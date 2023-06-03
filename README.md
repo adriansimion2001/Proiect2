@@ -72,7 +72,7 @@ Descriere software
 
 Am configurat ca intrari digitale: pinul 5 din portul D, pinii 0,1,2,3 din portul A.
 
-Am configurat ca iesiri digitale: portul B, pinii 2, 3, 4, 6 (LED) din portul D.
+Am configurat ca iesiri digitale: portul B, pinii 2, 3,  6 (LED) din portul D si pinul 0 din portul C.
 
 Memorie Flash estimata: 156 bytes
 
